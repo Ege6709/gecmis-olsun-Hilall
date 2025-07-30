@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geçmiş Olsun Hilal! 🌸</title>
+    <style>
+        body {
+            font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+            background-color: #fef6e4;
+            text-align: center;
+            padding: 20px;
+            color: #5f6c7b;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f5f5aa;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border: 2px solid #f3d2c1;
+        }
+        h1 {
+            color: #f582ae;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .emoji {
+            font-size: 2.5em;
+            margin: 15px 0;
+            display: block;
+        }
+        .animate {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .tea {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #8bd3dd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+        }
+        .footer {
+            margin-top: 20px;
+            font-style: italic;
+            color: #a7a9be;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji animate">🌼</div>
+        <h1>Geçmiş Olsun <span id="Hilal">Hilalcim</span>!</h1>
+        
+        <p>Hasta olduğun için vakit geçirebileceğin dikkatini dağıtacak bir site hazırlamak istedim umarım iyi gelir.</p>
+        
+        <div class="tea">☕</div>
+        <p>Bol bol dinlen, su iç <br> ve kendine iyi bak!</p>
+        
+        <p>Hızlıca iyileşip eski neşene kavuşmanı dilerim. <br> <span style="color:#f582ae">Mutluluğun her şeyden daha öncemli </span> ✨</p>
+        
+        <div class="emoji">🌸🌿🍯</div>
+        
+        <p>İhtiyacın olursa istedğin her zaman yazabilirsin. </p>
+        
+        <div class="footer">
+            <p>— Çabuk iyileşmen dileğiyle —</p>
+        </div>
+    </div>
+    
+    <script>
+        // İsmini özelleştirmek için
+        document.getElementById('name').textContent = "İsim"; // Buraya onun ismini yaz
+        
+        // Animasyonlu emojiler
+        const emojis = ["🌼", "🌻", "🌺", "💐", "🌸"];
+        let current = 0;
+        setInterval(() => {
+            document.querySelector('.emoji.animate').textContent = emojis[current];
+            current = (current + 1) % emojis.length;
+        }, 1500);
+    </script>
+</body>
+</html>
